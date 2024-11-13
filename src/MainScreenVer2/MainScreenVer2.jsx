@@ -5,12 +5,10 @@ import "./MainScreenVer2.css";
 export const MainScreenVer2 = ({ className, ...props }) => {
   const navigate = useNavigate();
 
-  // 로그인 버튼 클릭 시 LoginVer2 페이지로 이동
   const handleLoginClick = () => {
     navigate("/Login");
   };
 
-  // 회원 가입 버튼 클릭 시 Component 페이지로 이동
   const handleSignupClick = () => {
     navigate("/Component");
   };

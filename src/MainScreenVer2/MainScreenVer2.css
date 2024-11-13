@@ -43,14 +43,13 @@ body {
 }
 
 .main-screen-ver-2 .pngegg-24-3 {
-  width: 387.85px;
-  height: 622.05px;
   position: absolute;
+  width: 400px;
   left: 1100px;
-  top: 271.88px;
+  top: 310.88px;
   transform-origin: 0 0;
   transform: rotate(-1.903deg) scale(1, 1);
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .main-screen-ver-2 .group-19 {
@@ -71,16 +70,14 @@ body {
 }
 
 .main-screen-ver-2 .pngegg-24-4 {
-  width: 731px;
-  height: 691.88px;
   position: absolute;
-  left: 1300px;
-  top: 322px;
+  width: 500px;
+  left: 1430px;
+  top: 392px;
   transform-origin: 0 0;
   transform: rotate(11.167deg) scale(1, 1);
-  object-fit: cover;
+  object-fit: contain;
 }
-
 .main-screen-ver-2 .hello {
   color: rgba(0, 0, 0, 0);
   text-align: left;
@@ -156,9 +153,9 @@ body {
   text-align: center;
   cursor: pointer;
   display: flex;
-  justify-content: center; /* 수평 중앙 정렬 */
-  align-items: center; /* 수직 중앙 정렬 */
-  line-height: normal; /* line-height 제거 */
+  justify-content: center; 
+  align-items: center; 
+  line-height: normal; 
 }
 
 .main-screen-ver-2 .button.login {
@@ -198,12 +195,12 @@ body {
 }
 
 .main-screen-ver-2 .pngegg-24-2 {
-  width: 364.29px;
-  height: 584.26px;
   position: absolute;
-  left: 830px;
-  top: 480.2px;
+  width:400px;
+  left: 815px;
+  top: 520.2px;
   transform-origin: 0 0;
   transform: rotate(-9.353deg) scale(1, 1);
-  object-fit: cover;
+  object-fit: contain;
 }
+

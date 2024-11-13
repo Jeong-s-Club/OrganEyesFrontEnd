@@ -24,55 +24,34 @@
   top: 12px;
   object-fit: cover;
 }
-.lecture .group-19 {
-  position: absolute;
-  inset: 0;
-}
-.lecture .rectangle-8 {
-  background: #bf9169;
-  border-radius: 10px;
-  width: 268px;
-  height: 60px;
-  position: absolute;
-  left: 450px;
-  top: 850px;
-}
-.lecture .textdiv {
-  color: #ffffff;
-  text-align: center;
-  font-family: "NanumGothic-Regular", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  position: absolute;
-  left: 615px;
-  top: 855px;
-  width: 734.82px;
-}
-
-.lecture .group-1 {
-  position: absolute;
-  inset: 0;
-}
+.lecture .rectangle-8,
 .lecture .rectangle-82 {
   background: #bf9169;
   border-radius: 10px;
   width: 268px;
   height: 60px;
-  position: absolute;
-  left: 850px;
-  top: 850px;
-}
-.lecture .div2 {
   color: #ffffff;
-  text-align: center;
   font-family: "NanumGothic-Regular", sans-serif;
   font-size: 32px;
   font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: 615px;
-  top: 855px;
-  width: 734.82px;
+  cursor: pointer;
 }
+
+.lecture .rectangle-8 {
+  left: 450px;
+  top: 850px;
+}
+
+.lecture .rectangle-82 {
+  left: 850px;
+  top: 850px;
+}
+
 .lecture .div3 {
   color: #000000;
   text-align: center;
@@ -85,25 +64,24 @@
   width: 612px;
   height: 84px;
 }
-.lecture .group-18 {
-  position: absolute;
-  inset: 0;
-}
 .lecture .group-15 {
   width: 699.93px;
   height: 712.58px;
   position: static;
 }
 .lecture .pngegg-24-1 {
-  width: 641.91px;
-  height: 655.92px;
+  width: auto; 
+  height: auto; 
+  max-width: 500px; 
+  max-height: 650px; 
   position: absolute;
-  left: 50px;
-  top: 196.28px;
+  left: 150px;
+  top: 180px;
   transform-origin: 0 0;
-  transform: rotate(-0.508deg) scale(1, 1);
-  object-fit: cover;
+  transform: rotate(-0.508deg);
+  object-fit: contain;
 }
+
 .rectangle-38 {
   background: #ffffff;
   border: 2px solid #929292;
@@ -111,8 +89,8 @@
   width: 800px;
   height: 565px;
   position: fixed;
-  right: 150px;
-  top: 270px;
+  left: 750px; 
+  top: 250px;
   padding: 10px;
   font-family: "NanumGothic-Regular", sans-serif;
   font-size: 16px;
@@ -123,22 +101,4 @@
   min-width: 300px;
 }
 
-.lecture .div4 {
-  color: rgba(146, 146, 146, 0.52);
-  text-align: left;
-  font-family: "NanumGothic-Regular", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  position: absolute;
-  left: 663px;
-  top: 291px;
-  width: 668px;
-  height: 524px;
-}
 
-@font-face {
-  font-family: 'BMHANNAPro';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}

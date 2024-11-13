@@ -1,22 +1,19 @@
-/*rectangle 이름들 추후 변경 예정*/
-/* 전체적으로 모든 요소의 박스 사이징을 border-box로 설정 */
 .login-ver-2,
 .login-ver-2 * {
   box-sizing: border-box;
 }
 
-/* .login-ver-2 요소에 비율 고정과 크기 조정 설정 */
 .login-ver-2 {
-  background: #ece5d8; /* 배경색 */
-  width: 100vw; /*화면 너비 전체 사용: 크기 조절*/
-  height: 100vh;/*화면 높이 전체 사용: 크기 조절*/
+  background: #ece5d8; 
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  align-items: center; /*수직 정렬*/
-  justify-content: center; /*수평 정렬*/
-  overflow: hidden; /*컨텐츠가 컨테이너를 넘지 않도록 함*/
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
 
-/* 개별 요소들 */
 .login-ver-2 .rectangle-4 {
   background: #ffffff;
   border-radius: 30px;
@@ -25,28 +22,39 @@
   position: absolute;
   left: 22.3%;
   top: 25.9%;
+  z-index: 1;
 }
 
-.login-ver-2 .rectangle-6 {
-  background: #ffffff;
-  border-radius: 10px;
-  border: 1px solid #929292;
-  width: 50%;
-  height: 7.8%;
-  position: absolute;
-  left: 25.1%;
-  top: 44.3%;
-}
-
+.login-ver-2 .rectangle-6,
 .login-ver-2 .rectangle-7 {
   background: #ffffff;
   border-radius: 10px;
   border: 1px solid #929292;
   width: 50%;
   height: 7.8%;
+  padding-left: 130px;
+  padding-right: 10px;
   position: absolute;
+  z-index: 2;
+}
+
+.login-ver-2 .rectangle-6 {
+  left: 25.1%;
+  top: 44.3%;
+}
+
+.login-ver-2 .rectangle-7 {
   left: 25.1%;
   top: 55.3%;
+}
+
+.login-ver-2 .input-field {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: "NanumGothic", sans-serif;
 }
 
 .login-ver-2 .login {
@@ -58,6 +66,7 @@
   position: absolute;
   left: 25.1%;
   top: 29.6%;
+  z-index: 3;
 }
 
 .login-ver-2 .please-sign-yo-your-account {
@@ -70,9 +79,9 @@
   left: 25.1%;
   top: 37.7%;
   width: 45.4%;
+  z-index: 3;
 }
 
-/* 로그인 버튼 */
 .login-ver-2 .login-btn {
   background: #d9beb8;
   color: #ffffff;
@@ -88,71 +97,74 @@
   font-weight: 500;
   text-align: center;
   cursor: pointer;
+  z-index: 3;
 }
 
-/* 텍스트와 선을 감싸는 컨테이너 */
 .login-ver-2 .button-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px; /* 버튼 사이 간격 */
+  gap: 20px;
   position: absolute;
   left: 50%;
-  top: 75.8%; /* 적절한 위치로 설정 */
-  transform: translateX(-50%); /* 가로 중앙 정렬 */
+  top: 75.8%;
+  transform: translateX(-50%);
+  z-index: 3;
 }
 
-/* 버튼 스타일 (회원 가입, 비회원 이용 한꺼번에 적용) */
 .login-ver-2 .sign-up-btn, .login-ver-2 .non-member-btn {
   color: #ffffff;
   font-family: "NanumGothic", sans-serif;
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  background: none;
+  border: none;
 }
 
-/* 버튼 사이의 선 */
 .login-ver-2 .line-3 {
   border-left: 3px solid #d9beb8;
-  height: 35px; 
+  height: 35px;
 }
 
-
-/* 아이콘 이미지 */
 .login-ver-2 .free-icon-unlock-641693 {
   width: 2%;
   height: 4.8%;
   position: absolute;
-  left: 27.2%;
+  left: 26.5%;
   top: 56.6%;
   object-fit: contain;
+  z-index: 3;
 }
 
 .login-ver-2 .human {
   width: 2.8%;
   height: 4.2%;
   position: absolute;
-  left: 27%;
+  left: 26.5%;
   top: 45.8%;
   object-fit: contain;
+  z-index: 3;
 }
 
 .login-ver-2 .line-1 {
   border-top: 1px solid #929292;
-  width: 4.3%;
+  width: 40px;
   position: absolute;
-  left: 29.5%;
+  left: 30%;
   top: 48.3%;
   transform: rotate(90deg);
+  z-index: 3;
 }
 
 .login-ver-2 .line-2 {
   border-top: 1px solid #929292;
-  width: 4.3%;
+  width: 40px;
   position: absolute;
-  left: 29.5%;
+  left: 30%;
   top: 59.1%;
   transform: rotate(90deg);
+  z-index: 3;
 }
 
 .login-ver-2 .rectangle-31 {
@@ -162,6 +174,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  z-index: 0;
 }
 
 .login-ver-2 .organeyes-1 {
@@ -171,9 +184,9 @@
   left: 2.9%;
   top: 1.2%;
   object-fit: contain;
+  z-index: 3;
 }
 
-/* @font-face 설정...고딕이라 적용된건지 잘 모르겠음 */
 @font-face {
   font-family: "NanumGothic";
   src: url("../fonts/NanumGothic.ttf") format("truetype");

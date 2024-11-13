@@ -2,6 +2,7 @@
 .div * {
   box-sizing: border-box;
 }
+
 .div {
   background: #ece5d8;
   width: 100vw;
@@ -10,7 +11,9 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative; /* 부모 요소가 상대 위치로 설정되어야 자식 요소들에 z-index가 적용됩니다 */
 }
+
 .div .rectangle-40 {
   background: #e5e0d5;
   width: 100vw;
@@ -18,8 +21,10 @@
   position: absolute;
   left: 0px;
   top: 137px;
+  z-index: 1; /* rectangle-40 뒤로 오지 않도록 설정 */
   overflow: visible;
 }
+
 .div .organeyes-1 {
   width: 187px;
   height: 125px;
@@ -27,79 +32,58 @@
   left: 42px;
   top: 12px;
   object-fit: cover;
-}
-.div .group-6 {
-  position: absolute;
-  inset: 0;
+  z-index: 2; /* organeyes-1이 rectangle-40 위에 오도록 설정 */
 }
 
-.div .pngegg-29-1 {
-  width: 39px;
-  height: 44px;
+.div .arrow-button {
+  background: none;
+  border: none;
+  cursor: pointer;
   position: absolute;
+  padding: 0;
+  z-index: 10; /* 화살표 버튼은 최상위로 표시 */
+}
+
+.div .left-button {
   left: 42px;
   top: 511px;
-  object-fit: cover;
 }
-.div .pngegg-29-2 {
-  width: 3vw;
-  height: 44px;
-  position: absolute;
-  left: 98vw;
+
+.div .right-button {
+  right: 42px;
   top: 511px;
-  transform-origin: 0 0;
-  transform: rotate(0deg) scale(-1, 1);
-  object-fit: cover;
 }
-.div .group-1 {
-  position: absolute;
-  inset: 0;
-}
-.div .rectangle-8 {
-  background: #bf9169;
-  border-radius: 10px;
-  width:  17vw;
-  height: 60px;
-  position: absolute;
-  left: 55vw;
-  top: 850px;
-}
-.div .div5 {
-  color: #ffffff;
-  text-align: center;
-  font-family: "NanumGothic-Regular", sans-serif;
-  font-size: 2vw;
-  font-weight: 400;
-  position: absolute;
-  left: 42.1vw;
-  top: 855px;
-  width: 43vw;
-}
-.div .group-19 {
-  position: absolute;
-  inset: 0;
-}
+
+.div .rectangle-8,
 .div .rectangle-82 {
   background: #bf9169;
   border-radius: 10px;
   width: 17vw;
   height: 60px;
-  position: absolute;
-  left: 33vw;
-  top: 850px;
-  cursor: pointer;
-}
-.div .div6 {
   color: #ffffff;
-  text-align: center;
   font-family: "NanumGothic-Regular", sans-serif;
   font-size: 2vw;
   font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: 20.1vw;
-  top: 855px;
-  width: 43vw;
+  cursor: pointer;
+  border: none;
+  z-index: 3; /* 버튼들 위로 오도록 설정 */
 }
+
+.div .rectangle-8 {
+  left: 33vw;
+  top: 850px;
+}
+
+.div .rectangle-82 {
+  left: 55vw;
+  top: 850px;
+}
+
 .div .div7 {
   color: #000000;
   text-align: center;
@@ -111,84 +95,37 @@
   top: 160px;
   width: 70vw;
   height: 60px;
+  z-index: 3; /* div7 텍스트가 다른 요소 위로 오게 설정 */
 }
-.div .pngegg-24-7 {
-  width: 20vw;
-  height: 50vh;
-  position: absolute;
-  left: 66vw;
-  top: 325px;
-  
-  transform-origin: 0 0;
-  transform: rotate(0.091deg) scale(1, 1);
-  object-fit: cover;
-}
-.div .pngegg-24-5 {
-  width: 20vw;
-  height: 50vh;
-  position: absolute;
-  left: 12vw;
-  top: 350px;
-  
-  transform-origin: 0 0;
-  transform: rotate(1.212deg) scale(1, 1);
-  object-fit: cover;
-}
+
+.div .pngegg-24-7,
+.div .pngegg-24-5,
 .div .pngegg-24-6 {
-  width: 20vw;
-  height: 50vh;
+  width: 14vw;
+  height: auto;
   position: absolute;
-  left: 40vw;
+  object-fit: contain;
+  overflow: visible;
+  z-index: 2; /* pngegg 이미지가 rectangle-40 위에, 하지만 다른 요소들보다 아래로 설정 */
+}
+
+.div .pngegg-24-7 {
+  left: 64vw;
+  top: 325px;
+  transform: rotate(0.091deg);
+}
+
+.div .pngegg-24-5 {
+  left: 10vw;
+  top: 350px;
+  transform: rotate(1.212deg);
+}
+
+.div .pngegg-24-6 {
+  left: 37vw;
   top: 365px;
-  
-  object-fit: cover;
 }
-.div .rectangle-18 {
-  background: #bfaa8f;
-  border-radius: 1vw;
-  width: 10vw;
-  height: 5vh;
-  position: absolute;
-  top: 4vh;
-  left: calc(25vw + 50vw + 2vw);
-  z-index: 10;
-}
-.div .rectangle-182 {
-  background: #bfaa8f;
-  border-radius: 1vw;
-  width: 10vw;
-  height: 5vh;
-  position: absolute;
-  top: 4vh;
-  left: calc(25vw + 50vw + 14vw);
-  z-index: 10;
-}
-.div .div8 {
-  color: #ffffff;
-  text-align: center;
-  font-family: "NanumGothic-Regular", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  position: absolute;
-  top: calc(4vh + 2.5vh - 19.5px);
-  left: calc(25vw + 50vw + 2vw + 5vw - 61px);
-  width: 122px;
-  height: 39px;
-  z-index: 11;
-}
-.div .div9 {
-  color: #ffffff;
-  text-align: center;
-  font-family: "NanumGothic-Regular", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  position: absolute;
-  top: calc(4vh + 2.5vh - 19.5px);
-  left: calc(25vw + 50vw + 14vw + 5vw - 61px);
-  width: 122px;
-  height: 39px;
-  z-index: 11;
-}
+
 .div .rope {
   width: 105vw;
   height: 13vh;
@@ -196,7 +133,9 @@
   left: -5vw;
   top: 219px;
   object-fit: cover;
+  z-index: 2; /* rope가 pngegg와 다른 배경들 위에 위치하도록 설정 */
 }
+
 .div .clip-1 {
   width: 3vw;
   height: 209px;
@@ -204,7 +143,9 @@
   left: 20vw;
   top: 230px;
   object-fit: cover;
+  z-index: 2; /* clip도 z-index 설정 */
 }
+
 .div .clip-2 {
   width: 3vw;
   height: 21vh;
@@ -214,7 +155,9 @@
   transform-origin: 0 0;
   transform: rotate(-4.897deg) scale(1, 1);
   object-fit: cover;
+  z-index: 2; /* clip2의 z-index도 설정 */
 }
+
 .div .clip-3 {
   width: 3vw;
   height: 209px;
@@ -224,13 +167,9 @@
   transform-origin: 0 0;
   transform: rotate(8.532deg) scale(1, 1);
   object-fit: cover;
+  z-index: 2; /* clip3의 z-index도 설정 */
 }
-@font-face {
-  font-family: 'Jua';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+
 @font-face {
   font-family: 'BMHANNAPro';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');

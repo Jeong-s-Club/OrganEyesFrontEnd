@@ -1,0 +1,22 @@
+{
+    "pictures": [
+      {
+        "id": "42c8",
+        "files": [
+          {
+            
+          }
+        ]
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "userEmail": "hey@naver.com",
+        "userPw": "abcd1234!",
+        "role": "USER",
+        "nick": "h"
+      }
+    ]
+  }
+  

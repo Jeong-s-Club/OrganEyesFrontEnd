@@ -40,7 +40,7 @@
 
 .div .div5 {
   color: #ffffff;
-  text-align: left;
+  text-align: center;
   font-family: "NanumGothic-Regular", sans-serif;
   font-size: 32px;
   font-weight: 400;
@@ -68,7 +68,7 @@
 
 .div .div6 {
   color: #ffffff;
-  text-align: left;
+  text-align: center;
   font-family: "NanumGothic-Regular", sans-serif;
   font-size: 32px;
   font-weight: 400;
@@ -88,7 +88,6 @@
   object-fit: cover;
 }
 
-/* 중앙 배치를 위한 이미지 스타일 및 shadow 제거 */
 .div .pngegg-24-7,
 .div .pngegg-24-5,
 .div .pngegg-24-6 {
@@ -99,20 +98,19 @@
   box-shadow: none;
 }
 
-/* 각 이미지 중앙에 배치 */
 .div .pngegg-24-5 {
-  left: calc(281px + (67px - 331px) / 2); /* clip-1 중앙에 배치 */
-  top: 393px;
+  left: calc(281px + (67px - 331px) / 2); 
+  top: 385px;
 }
 
 .div .pngegg-24-6 {
-  left: calc(800px + (67px - 331px) / 2); /* clip-2 중앙에 배치 */
-  top: 396px;
+  left: calc(800px + (67px - 331px) / 2);
+  top: 400px;
 }
 
 .div .pngegg-24-7 {
-  left: calc(1300px + (67px - 331px) / 2); /* clip-3 중앙에 배치 */
-  top: 406px;
+  left: calc(1300px + (67px - 331px) / 2);
+  top: 380px;
 }
 
 .div .pngegg-29-1 {
@@ -128,10 +126,9 @@
   width: 39px;
   height: 44px;
   position: absolute;
-  left: 1690px;
+  left: 1620px;
   top: 511px;
   transform-origin: 0 0;
-  transform: rotate(0deg) scale(-1, 1);
   object-fit: cover;
 }
 
@@ -140,55 +137,46 @@
   inset: 0;
 }
 
-.div .rectangle-183 {
-  background: #d9beb8;
-  border-radius: 10px;
-  width: 143px;
-  height: 49px;
-  position: absolute;
-  left: 29px;
-  top: 170px;
-}
-
-.div .div7 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "NanumGothic-Regular", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  position: absolute;
-  left: 39px;
-  top: 183px;
-  width: 122px;
-  height: 26px;
-}
-
-.div .group-15 {
-  position: absolute;
-  inset: 0;
-}
-
+.div .rectangle-183,
 .div .rectangle-184 {
   background: #d9beb8;
   border-radius: 10px;
   width: 143px;
   height: 49px;
   position: absolute;
+  cursor: pointer;
+}
+
+.div .rectangle-183 {
+  left: 29px;
+  top: 170px;
+}
+
+.div .rectangle-184 {
   left: 196px;
   top: 170px;
 }
 
-.div .div8 {
+.div .upload-text {
   color: #ffffff;
-  text-align: left;
   font-family: "NanumGothic-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
-  left: 218px;
-  top: 183px;
-  width: 99px;
-  height: 23px;
+  left: 13px; 
+  top: 7px; 
+  cursor: pointer;
+}
+
+.div .delete-text {
+  color: #ffffff;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 23px; 
+  top: 7px; 
+  cursor: pointer;
 }
 
 .div .rope-1 {

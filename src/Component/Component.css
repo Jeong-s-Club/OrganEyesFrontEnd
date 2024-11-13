@@ -261,6 +261,16 @@
   object-fit: cover;
 }
 
+.email-message {
+  font-family: "NanumGothic", sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+  position: absolute;
+  top: 370px; 
+  left: 37%; 
+}
+
+
 @font-face {
   font-family: "NanumGothic";
   src: url("../fonts/NanumGothic.ttf") format("truetype");
