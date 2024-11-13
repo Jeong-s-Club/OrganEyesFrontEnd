@@ -1,0 +1,71 @@
+.button-container {
+    display: flex;
+    align-items: center;
+    position: relative; /* 부모 위치를 기준으로 고정 */
+    z-index: 10; /* 메뉴가 상단 요소에 의해 가려지지 않도록 */
+  }
+  
+  .button-container button {
+    background-color: #d3c7b8;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  .hamburger_icon {
+    position: absolute; /* 고정된 위치 */
+    top: 20px; /* 상단 여백 */
+    right: 20px; /* 오른쪽 여백 */
+    width: -10vw; 
+    height: 30px;
+    cursor: pointer;
+    z-index: 1000; /* 메뉴보다 위에 표시 */
+  }
+  
+  
+  .toggle-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f0f0f0;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+  }
+  
+  .toggle-menu.open {
+    transform: translateX(0);
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+  
+  .toggle-menu ul {
+    list-style: none;
+    padding: 60px 20px;
+  }
+  
+  .toggle-menu ul li {
+    margin: 20px 0;
+  }
+  
+  .toggle-menu ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  

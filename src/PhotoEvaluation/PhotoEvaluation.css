@@ -1,0 +1,163 @@
+.photo-evaluation,
+.photo-evaluation * {
+  box-sizing: border-box;
+}
+
+.photo-evaluation {
+  background: #ece5d8;
+  height: 100vh; /* 화면의 전체 높이 */
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-evaluation .rectangle-31 {
+  background: #493831;
+  width: 100vw; /* 화면의 전체 너비 */
+  height: 18vh; /* 뷰포트 높이의 18% */
+  position: absolute;
+  left: 0;
+  bottom: 0; /* 아래쪽에 위치하도록 */
+}
+
+.photo-evaluation .organeyes-1 {
+  width: 187px;
+  height: 125px;
+  position: absolute;
+  left: 42px;
+  top: 12px;
+  object-fit: cover;
+}
+
+.photo-evaluation .rectangle-32 {
+  background: #ffffff;
+  border-radius: 1vw;
+  width: 90vw;
+  height: 570px;
+  position: absolute;
+  left: 5vw;
+  top: 235px;
+  border: 2px dashed #929292;
+  display: flex;
+  flex-direction: row; /* 세로 방향으로 컨텐츠 배치 */
+  align-items: center;
+  padding: 10px;
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+  gap: 3px;
+}
+
+.photo-evaluation .photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  align-items: flex-start; /* 위쪽 정렬 */
+  gap: 5px;
+  width: 100%;
+}
+
+.photo-evaluation .photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 5px 0;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.photo-evaluation .div6 {
+  color: #929292;
+  text-align: center;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 2vh;
+  font-weight: 400;
+  width: 100%;
+  margin-top: 10px;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.photo-evaluation .div6.hidden {
+  opacity: 0; /* 투명하게 처리하여 숨기기 */
+  pointer-events: none; /* 클릭 불가능 */
+}
+
+
+.photo-evaluation .rectangle-12 {
+  border-radius: 1vw;
+  border-style: dashed;
+  border-color: #929292;
+  border-width: 1px;
+  width: 90vw;
+  height: 570px;
+  position: absolute;
+  left: 5vw;
+  top: 235px;
+}
+
+.photo-evaluation .rectangle-8 {
+  background: #bf9169;
+  border-radius: 1vw;
+  width: 60vw;
+  height: 6vh;
+  position: absolute;
+  left: 20vw;
+  bottom: 30px;
+}
+
+.photo-evaluation .div4 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 2.5vh;
+  font-weight: 400;
+  position: absolute;
+  left: 25vw;
+  bottom: 5vh;
+  width: 50vw;
+}
+
+.photo-evaluation .div5 {
+  color: #000000;
+  text-align: left;
+  font-family: "Jua", sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+  position: absolute;
+  left: 40vw;
+  top: 120px;
+  width: 600px;
+  height: 8vh;
+}
+
+.photo-evaluation .rectangle-18,
+.photo-evaluation .rectangle-182 {
+  background: #bfaa8f;
+  border-radius: 1vw;
+  width: 10vw;
+  height: 5vh;
+  position: absolute;
+  top: 4.6vh;
+}
+
+.photo-evaluation .rectangle-18 {
+  left: 89vw;
+}
+
+.photo-evaluation .rectangle-182 {
+  left: 77vw;
+}
+
+.photo-evaluation .div7 {
+  left: 91.5vw;
+}
+
+.photo-evaluation .div8 {
+  left: 79.5vw;
+}
+
+@font-face {
+  font-family: 'Jua';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

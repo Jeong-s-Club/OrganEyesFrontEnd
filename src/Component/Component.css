@@ -1,0 +1,276 @@
+.component,
+.component * {
+  box-sizing: border-box;
+}
+.component {
+  background: #ece5d8;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.component .rectangle-31 {
+  background: #4b3f4e;
+  width: 100vw;
+  height: 185px;
+  position: absolute;
+  left: 0px;
+  top: 800px;
+}
+.component .group-14 {
+  position: absolute;
+  inset: 0;
+}
+.component .rectangle-14 {
+  background: #ffffff;
+  border-radius: 10px;
+  width:max(480px,28%);
+  height: 681px;
+  position: absolute;
+  left: 35%;
+  top: 132px;
+}
+.component .div2 {
+  color: #000000;
+  text-align: left;
+  font-family: "BMHANNAPro", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  position: absolute;
+  left: 37%;
+  top: 181.88px;
+  width: 136.28px;
+  height: 54.34px;
+}
+.component .div3 {
+  color: #000000;
+  text-align: left;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 37%;
+  top: 224.64px;
+  width: 280.58px;
+  height: 23.16px;
+}
+.component .group-7 {
+  width: 463.18px;
+  height: 60.9px;
+  position: static;
+}
+.component .div4 {
+  text-align: left;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 37%;
+  top: 299px;
+  width: 324px;
+  height: 30px;
+}
+.div-4-span {
+  color: #000000;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.div-4-span2 {
+  color: #ff1f1f;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.component .rectangle-15 {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #929292;
+  border-width: 1px;
+  width:max(420px, 23.5%);
+  height: 35.63px;
+  position: absolute;
+  left: 37%;
+  top: 324.27px;
+}
+.component .group-8 {
+  width: 468px;
+  height: 57.9px;
+  position: static;
+}
+.component .div5 {
+  text-align: left;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 488px;
+  top: 413px;
+  left: 37%;
+  height: 30px;
+}
+.div-5-span {
+  color: #000000;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.div-5-span2 {
+  color: #ff0000;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.component .rectangle-152 {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #929292;
+  border-width: 1px;
+  width: max(420px,23.5%);
+  height: 35.63px;
+  position: absolute;
+  left: 37%;
+  top: 435.27px;
+}
+.component .group-9 {
+  width: 463.18px;
+  height: 57.9px;
+  position: static;
+}
+.component .div6 {
+  color: #000000;
+  text-align: left;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 37%;
+  top: 525px;
+  width: 72.15px;
+  height: 30.29px;
+}
+.component .rectangle-153 {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #929292;
+  border-width: 1px;
+  width: max(420px,23.5%);
+  height: 35.63px;
+  position: absolute;
+  left: 37%;
+  top: 547.27px;
+}
+.component .group-12 {
+  width: 88.18px;
+  height: 25.83px;
+  position: static;
+}
+.component .sign-up-btn, .cancel-btn, .non-member-btn {
+  color: #ffffff;
+  font-family: "NanumGothic", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.component .check-btn, .non-member-btn {
+  color: #ffffff;
+  font-family: "NanumGothic", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.component .check-btn {
+  background: #d9beb8;
+  border-radius: 10px;
+  width: 88.18px;
+  height: 25.83px;
+  position: absolute;
+  left: 56%;
+  top: 329px;
+}
+.component .div7 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 56%;
+  top: 332.24px;
+  width:60%;
+  height: 14.25px;
+}
+.component .group-1 {
+  position: absolute;
+  inset: 0;
+}
+.component .cancel-btn {
+  background: #d9beb8;
+  border-radius: 10px;
+  width: max(420px,23.5%);
+  height: 45.38px;
+  position: absolute;
+  left: 37%;
+  top: 645px;
+}
+.component .div8 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 46.3%;
+  top: 645px;
+  width: 324.36px;
+  height: 35px;
+}
+.component .group-15 {
+  position: absolute;
+  inset: 0;
+}
+.component .sign-up-btn {
+  background: #d9beb8;
+  border-radius: 10px;
+  width: max(420px,23.5%);
+  height: 45.38px;
+  position: absolute;
+  left: 37%;
+  top: 716px;
+}
+.component .div9 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 46.5%;
+  top: 715px;
+  width: 326.98px;
+  height: 35px;
+}
+.component .organeyes-1 {
+  width: 187px;
+  height: 125px;
+  position: absolute;
+  left: 42px;
+  top: 12px;
+  object-fit: cover;
+}
+
+@font-face {
+  font-family: "NanumGothic";
+  src: url("../fonts/NanumGothic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BMHANNAPro';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
