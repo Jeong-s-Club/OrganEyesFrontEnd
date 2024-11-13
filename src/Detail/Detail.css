@@ -1,0 +1,130 @@
+.detail,
+.detail * {
+  box-sizing: border-box;
+}
+
+.detail {
+  background: #ece5d8;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.detail .organeyes-1 {
+  width: 13vw;
+  height: 125px;
+  position: absolute;
+  left: 2.9vw;
+  top: 12px;
+  object-fit: cover;
+}
+
+.detail .rectangle-40 {
+  width: 1920px;
+  height: 1450px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+
+.polaroid-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.polaroid {
+  position: absolute;
+  transition: all 0.5s ease;
+  transform-origin: center;
+}
+
+.central-image {
+  width: 45vw; /* 중앙 이미지 크기 */
+  height: auto;
+  z-index: 3;
+  transform: translateX(0) scale(1.1);
+}
+
+.left-image {
+  width: 35vw; /* 좌측 이미지 크기 */
+  height: auto;
+  transform: translateX(-15vw) scale(0.9); /* 간격을 좁히기 위해 translateX 값을 -15vw로 설정 */
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.right-image {
+  width: 35vw; /* 우측 이미지 크기 */
+  height: auto;
+  transform: translateX(15vw) scale(0.9); /* 간격을 좁히기 위해 translateX 값을 15vw로 설정 */
+  z-index: 2;
+  opacity: 0.6;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 4;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-arrow {
+  left: 2vw;
+}
+
+.right-arrow {
+  right: 2vw;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #f5a419;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.indicator.active {
+  opacity: 1;
+  background-color: #f5a419;
+}
+
+.detail .rectangle-182 {
+  background: #d9beb8;
+  border-radius: 10px;
+  width: 10vw;
+  height: 49px;
+  position: absolute;
+  left: 85vw;
+  top: 170px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+}

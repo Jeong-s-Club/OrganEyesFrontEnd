@@ -1,0 +1,144 @@
+.lecture,
+.lecture * {
+  box-sizing: border-box;
+}
+.lecture {
+  background: #ece5d8;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.lecture .rectangle-40 {
+  width: 1920px;
+  height: 1450px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.lecture .organeyes-1 {
+  width: 187px;
+  height: 125px;
+  position: absolute;
+  left: 42px;
+  top: 12px;
+  object-fit: cover;
+}
+.lecture .group-19 {
+  position: absolute;
+  inset: 0;
+}
+.lecture .rectangle-8 {
+  background: #bf9169;
+  border-radius: 10px;
+  width: 268px;
+  height: 60px;
+  position: absolute;
+  left: 450px;
+  top: 850px;
+}
+.lecture .textdiv {
+  color: #ffffff;
+  text-align: center;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 615px;
+  top: 855px;
+  width: 734.82px;
+}
+
+.lecture .group-1 {
+  position: absolute;
+  inset: 0;
+}
+.lecture .rectangle-82 {
+  background: #bf9169;
+  border-radius: 10px;
+  width: 268px;
+  height: 60px;
+  position: absolute;
+  left: 850px;
+  top: 850px;
+}
+.lecture .div2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 615px;
+  top: 855px;
+  width: 734.82px;
+}
+.lecture .div3 {
+  color: #000000;
+  text-align: center;
+  font-family: "BMHANNAPro", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  position: absolute;
+  left: 850px;
+  top: 171px;
+  width: 612px;
+  height: 84px;
+}
+.lecture .group-18 {
+  position: absolute;
+  inset: 0;
+}
+.lecture .group-15 {
+  width: 699.93px;
+  height: 712.58px;
+  position: static;
+}
+.lecture .pngegg-24-1 {
+  width: 641.91px;
+  height: 655.92px;
+  position: absolute;
+  left: 50px;
+  top: 196.28px;
+  transform-origin: 0 0;
+  transform: rotate(-0.508deg) scale(1, 1);
+  object-fit: cover;
+}
+.rectangle-38 {
+  background: #ffffff;
+  border: 2px solid #929292;
+  border-radius: 10px;
+  width: 800px;
+  height: 565px;
+  position: fixed;
+  right: 150px;
+  top: 270px;
+  padding: 10px;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  resize: none;
+  overflow-y: auto;
+  z-index: 10;
+  min-width: 300px;
+}
+
+.lecture .div4 {
+  color: rgba(146, 146, 146, 0.52);
+  text-align: left;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  position: absolute;
+  left: 663px;
+  top: 291px;
+  width: 668px;
+  height: 524px;
+}
+
+@font-face {
+  font-family: 'BMHANNAPro';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

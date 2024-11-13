@@ -1,8 +1,12 @@
 import "./LoginVer2.css";
+import { Link } from "react-router-dom";
+import ToggleMenu from "../ToggleMenu/ToggleMenu";
+
 
 export const LoginVer2 = ({ className, ...props }) => {
   return (
     <div className={"login-ver-2 " + className}>
+       <ToggleMenu />
       <div className="rectangle-4"></div>
       <div className="rectangle-6"></div>
       <div className="rectangle-7"></div>
@@ -37,7 +41,9 @@ export const LoginVer2 = ({ className, ...props }) => {
       <div className="rectangle-31"></div>
 
       {/* 하단 로고 */}
-      <img className="organeyes-1" src="organeyes-10.png" alt="로고" />
+      <Link to="/" className="organeyes-1">
+        <img src="organeyes-10.png" alt="로고" />
+      </Link>
     </div>
   );
 };
