@@ -52,7 +52,7 @@
 .login-ver-2 .login {
   color: #373740;
   text-align: left;
-  font-family: "BMHANNAPro", sans-serif;
+  font-family: "NanumGothic", sans-serif;
   font-size: 64px;
   font-weight: 500;
   position: absolute;
@@ -104,7 +104,7 @@
 
 /* 버튼 스타일 (회원 가입, 비회원 이용 한꺼번에 적용) */
 .login-ver-2 .sign-up-btn, .login-ver-2 .non-member-btn {
-  color: #ffffff;
+  color: #d9beb8;
   font-family: "NanumGothic", sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -113,8 +113,8 @@
 
 /* 버튼 사이의 선 */
 .login-ver-2 .line-3 {
-  border-left: 3px solid #d9beb8;
-  height: 35px; 
+  border-left: 1px solid #d9beb8;
+  height: 24px; 
 }
 
 
@@ -178,12 +178,5 @@
   font-family: "NanumGothic";
   src: url("../fonts/NanumGothic.ttf") format("truetype");
   font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'BMHANNAPro';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
-  font-weight: normal;
   font-style: normal;
 }
