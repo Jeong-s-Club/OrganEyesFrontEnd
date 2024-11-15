@@ -1,38 +1,10 @@
 import "./Detail.css";
-import { useState, useEffect } from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Detail = ({ className, ...props }) => {
-  const location = useLocation();
-  const { groupId } = location.state || {}; 
-  
-  const [images, setImages] = useState([]);
   const [index, setIndex] = useState(0);
-
-  // 백엔드-사진 요청
-  useEffect(() => {
-    if (groupId) {
-      fetch(`http://localhost:4000/album/${groupId}`, {  // url변경?
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer yourAccessToken`, // 액세스토큰
-        },
-      })
-        .then(response => {
-          if (!response.ok) {
-            throw new Error("데이터 가져오기에 실패했습니다.");
-          }
-          return response.json();
-        })
-        .then(data => {
-          setImages(data.images); 
-        })
-        .catch(error => {
-          console.error("오류 발생:", error);
-        });
-    }
-  }, [groupId]);
+  const images = ["pngegg-24-10.png", "pngegg-24-11.png", "pngegg-24-12.png"]; 
 
   const handleNext = () => {
     setIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -52,10 +24,10 @@ export const Detail = ({ className, ...props }) => {
     <div className={"detail " + className}>
       <img className="rectangle-40" src="rectangle-400.svg" alt="Background" />
 
-      <Link to="/" className="organeyes-1">
+      <a href="/" className="organeyes-1">
         <img src="organeyes-10.png" alt="Organeyes Logo" />
-      </Link>
-
+      </a>
+      
       <Link to="/Lecture" className="rectangle-182 div4">
         사진 수정
       </Link>

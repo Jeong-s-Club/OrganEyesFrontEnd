@@ -31,7 +31,7 @@
 
 .polaroid-container {
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -46,24 +46,24 @@
 }
 
 .central-image {
-  width: 30vw;
+  width: 45vw; /* 중앙 이미지 크기 */
   height: auto;
   z-index: 3;
   transform: translateX(0) scale(1.1);
 }
 
 .left-image {
-  width: 25vw; 
+  width: 35vw; /* 좌측 이미지 크기 */
   height: auto;
-  transform: translateX(-15vw) scale(0.9); 
+  transform: translateX(-15vw) scale(0.9); /* 간격을 좁히기 위해 translateX 값을 -15vw로 설정 */
   z-index: 2;
   opacity: 0.6;
 }
 
 .right-image {
-  width: 25vw; 
+  width: 35vw; /* 우측 이미지 크기 */
   height: auto;
-  transform: translateX(15vw) scale(0.9); 
+  transform: translateX(15vw) scale(0.9); /* 간격을 좁히기 위해 translateX 값을 15vw로 설정 */
   z-index: 2;
   opacity: 0.6;
 }

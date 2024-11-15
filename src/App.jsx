@@ -27,6 +27,8 @@ function App() {
             <img src="hamburger_icon.png"/>
           </div>
         )}
+
+        {/* 사이드 메뉴 */}
         <ToggleMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
 
         <Routes>

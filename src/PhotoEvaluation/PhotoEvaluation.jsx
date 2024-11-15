@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Compressor from "compressorjs";
 import ToggleMenu from "../ToggleMenu/ToggleMenu";
-import { Link } from "react-router-dom";
 import "./PhotoEvaluation.css";
 
 export const PhotoEvaluation = ({ className, ...props }) => {
@@ -73,20 +72,15 @@ export const PhotoEvaluation = ({ className, ...props }) => {
     setIsDragging(false);
   };
 
-  //백엔드
   const handleSubmit = async () => {
     try {
-      const files = uploadedImages.map(img => ({
-        name: img.name || "", 
-        content: img.content 
-      }));
-      const response = await fetch("http://localhost:4000/picture/assess", {
+      const response = await fetch("http://localhost:8080/pictures", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          files: files 
+          files: uploadedImages,
         }),
         mode: "cors",
       });
@@ -102,8 +96,6 @@ export const PhotoEvaluation = ({ className, ...props }) => {
       console.error("에러 발생:", error);
       alert("사진 평가 요청에 실패했습니다.");
     }
-  
-
     navigate("/result", { state: { images: uploadedImages.map((img) => `data:image/jpeg;base64,${img.content}`) } });
   };
 
@@ -111,10 +103,7 @@ export const PhotoEvaluation = ({ className, ...props }) => {
     <div className={"photo-evaluation " + className}>
       <ToggleMenu />
       <div className="rectangle-31"></div>
-      
-      <Link to="/" className="organeyes-1">
-        <img src="organeyes-10.png" alt="Organeyes logo" style={{ width: '187px', height: '125px' }} />
-      </Link>
+      <img className="organeyes-1" src="organeyes-10.png" alt="organeyes logo" />
 
       <div
         className={`rectangle-32 ${isDragging ? "drag-over" : ""}`}
@@ -124,12 +113,7 @@ export const PhotoEvaluation = ({ className, ...props }) => {
       >
         {uploadedImages.length > 0 ? (
           uploadedImages.map((image, index) => (
-            <img
-              key={index}
-              className="photo"
-              src={`data:image/jpeg;base64,${image.content}`}
-              alt={`uploaded-${index}`}
-            />
+            <img key={index} className="photo" src={`data:image/jpeg;base64,${image.content}`} alt={`uploaded-${index}`} />
           ))
         ) : (
           <img className="placeholder-photo" src="photo.png" alt="default preview" draggable="false" />
