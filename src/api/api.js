@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "http://localhost:5000";/*백엔드-테스트를 위한 임시 포트번호*/
 
-// 로그인 요청 함수
 export async function login(userEmail, userPw) {
     try {
         const response = await axios.post(`${API_BASE_URL}/users/login`, { userEmail, userPw });
@@ -13,7 +12,6 @@ export async function login(userEmail, userPw) {
     }
 }
 
-// 이메일 중복 확인 요청 함수
 export async function checkEmailDuplicate(userEmail) {
     try {
         const response = await axios.get(`${API_BASE_URL}/users/isDuplicate`, {
@@ -27,7 +25,6 @@ export async function checkEmailDuplicate(userEmail) {
     }
 }
 
-// 회원가입 요청 함수
 export async function signup(userEmail, userPw, role, nick) {
     try {
         const response = await axios.post(`${API_BASE_URL}/users/signup`, { userEmail, userPw, role, nick });
@@ -38,10 +35,9 @@ export async function signup(userEmail, userPw, role, nick) {
     }
 }
 
-// 사진 업로드 요청 함수
 export async function uploadPicture(files) {
     try {
-        const response = await axios.post(`${API_BASE_URL}/pictures`, { files });
+        const response = await axios.post(`${API_BASE_URL}/picture/access`, { files });
         return response.data;
     } catch (error) {
         console.error("사진 업로드 실패:", error.response ? error.response.data : error.message);

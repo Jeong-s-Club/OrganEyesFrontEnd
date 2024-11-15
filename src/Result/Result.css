@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  position: relative; /* 부모 요소가 상대 위치로 설정되어야 자식 요소들에 z-index가 적용됩니다 */
+  position: relative;
 }
 
 .div .rectangle-40 {
@@ -21,8 +21,53 @@
   position: absolute;
   left: 0px;
   top: 137px;
-  z-index: 1; /* rectangle-40 뒤로 오지 않도록 설정 */
-  overflow: visible;
+  z-index: 1;
+}
+
+.photo-container {
+  position: absolute;
+  display: inline-block;
+  z-index: 3;
+}
+
+.photo-container.photo1 {
+  left: 200px;
+  top: 350px;
+}
+
+.photo-container.photo2 {
+  left: 720px;
+  top: 360px;
+}
+
+.photo-container.photo3 {
+  left: 1200px;
+  top: 340px;
+}
+
+.photo {
+  max-width: 450px;
+  max-height: 450px;
+  width: auto;
+  height: auto;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
 }
 
 .div .organeyes-1 {
@@ -32,7 +77,7 @@
   left: 42px;
   top: 12px;
   object-fit: cover;
-  z-index: 2; /* organeyes-1이 rectangle-40 위에 오도록 설정 */
+  z-index: 2;
 }
 
 .div .arrow-button {
@@ -41,7 +86,7 @@
   cursor: pointer;
   position: absolute;
   padding: 0;
-  z-index: 10; /* 화살표 버튼은 최상위로 표시 */
+  z-index: 10;
 }
 
 .div .left-button {
@@ -71,7 +116,7 @@
   position: absolute;
   cursor: pointer;
   border: none;
-  z-index: 3; /* 버튼들 위로 오도록 설정 */
+  z-index: 3;
 }
 
 .div .rectangle-8 {
@@ -95,58 +140,30 @@
   top: 160px;
   width: 70vw;
   height: 60px;
-  z-index: 3; /* div7 텍스트가 다른 요소 위로 오게 설정 */
+  z-index: 3;
 }
 
-.div .pngegg-24-7,
-.div .pngegg-24-5,
-.div .pngegg-24-6 {
-  width: 14vw;
-  height: auto;
-  position: absolute;
-  object-fit: contain;
-  overflow: visible;
-  z-index: 2; /* pngegg 이미지가 rectangle-40 위에, 하지만 다른 요소들보다 아래로 설정 */
-}
-
-.div .pngegg-24-7 {
-  left: 64vw;
-  top: 325px;
-  transform: rotate(0.091deg);
-}
-
-.div .pngegg-24-5 {
-  left: 10vw;
-  top: 350px;
-  transform: rotate(1.212deg);
-}
-
-.div .pngegg-24-6 {
-  left: 37vw;
-  top: 365px;
-}
-
-.div .rope {
+.rope {
   width: 105vw;
   height: 13vh;
   position: absolute;
   left: -5vw;
   top: 219px;
   object-fit: cover;
-  z-index: 2; /* rope가 pngegg와 다른 배경들 위에 위치하도록 설정 */
+  z-index: 2;
 }
 
-.div .clip-1 {
+.clip-1 {
   width: 3vw;
   height: 209px;
   position: absolute;
   left: 20vw;
   top: 230px;
   object-fit: cover;
-  z-index: 2; /* clip도 z-index 설정 */
+  z-index: 5;
 }
 
-.div .clip-2 {
+.clip-2 {
   width: 3vw;
   height: 21vh;
   position: absolute;
@@ -155,10 +172,10 @@
   transform-origin: 0 0;
   transform: rotate(-4.897deg) scale(1, 1);
   object-fit: cover;
-  z-index: 2; /* clip2의 z-index도 설정 */
+  z-index: 5;
 }
 
-.div .clip-3 {
+.clip-3 {
   width: 3vw;
   height: 209px;
   position: absolute;
@@ -167,12 +184,5 @@
   transform-origin: 0 0;
   transform: rotate(8.532deg) scale(1, 1);
   object-fit: cover;
-  z-index: 2; /* clip3의 z-index도 설정 */
-}
-
-@font-face {
-  font-family: 'BMHANNAPro';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  z-index: 5;
 }

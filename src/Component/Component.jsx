@@ -11,7 +11,6 @@ export const Component = ({ className, ...props }) => {
   const [message, setMessage] = useState("");
   const [messageColor, setMessageColor] = useState("");
 
-  // 이메일 중복 확인 함수
   const checkEmailDuplicate = async () => {
     console.log("Checking email:", email);
     try {
@@ -33,18 +32,17 @@ export const Component = ({ className, ...props }) => {
     }
   };
 
-  // 회원가입 요청 함수
   const handleSignup = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/users/signup", {
+      const response = await axios.post("http://localhost:4000/users/signup", { /* 백엔드 */
         userEmail: email,
         userPw: password,
         nick: nickname,
-        role: "USER", // 사용자 역할 설정, 필요에 따라 수정 가능
+        role: "USER", 
       });
       if (response.status === 200) {
         alert(`${nickname}님, 환영합니다!`);
-        navigate("/PhotoEvaluation"); // 회원가입 성공 시 이동할 경로
+        navigate("/PhotoEvaluation"); 
       }
     } catch (error) {
       console.error("회원가입 오류:", error.response ? error.response.data : error.message);
@@ -116,7 +114,7 @@ export const Component = ({ className, ...props }) => {
       </button>
 
       <Link to="/" className="organeyes-1">
-        <img src="organeyes-10.png" alt="로고" />
+        <img src="organeyes-10.png"/>
       </Link>
     </div>
   );
