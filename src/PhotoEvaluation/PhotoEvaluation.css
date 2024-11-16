@@ -1,0 +1,134 @@
+.photo-evaluation,
+.photo-evaluation * {
+  box-sizing: border-box;
+}
+
+.photo-evaluation {
+  background: #ece5d8;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-evaluation .rectangle-31 {
+  background: #493831;
+  width: 100vw;
+  height: 18vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.photo-evaluation .organeyes-1 {
+  width: 187px;
+  height: 125px;
+  position: absolute;
+  left: 42px;
+  top: 12px;
+  object-fit: cover;
+}
+
+.photo-evaluation .rectangle-32 {
+  background: #ffffff;
+  border-radius: 1vw;
+  width: 90vw;
+  height: 570px;
+  position: absolute;
+  left: 5vw;
+  top: 235px;
+  border: 2px dashed #929292;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+.photo-evaluation .photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  width: 100%;
+}
+
+.photo-evaluation .photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.photo-evaluation .placeholder-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: auto;
+  pointer-events: none;
+}
+
+.photo-evaluation .div5 {
+  color: #000000;
+  text-align: left;
+  font-family: "BMHANNAPro", sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+  position: absolute;
+  left: 40vw;
+  top: 120px;
+  width: 600px;
+  height: 8vh;
+}
+
+.photo-evaluation .div6 {
+  color: #929292;
+  text-align: center;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  margin-top: 10px;
+  position: absolute;
+  top: 600px; 
+  left: 30px;
+  z-index: 2;
+  opacity: 1;
+}
+
+.photo-evaluation .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  left: 20vw;
+  bottom: 5vh;
+}
+
+.photo-evaluation .upload-button,
+.photo-evaluation .submit-button {
+  background: #bf9169;
+  border-radius: 1vw;
+  width: 500px;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "NanumGothic-Regular", sans-serif;
+  font-size: 2vh;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+@font-face {
+  font-family: 'BMHANNAPro';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
